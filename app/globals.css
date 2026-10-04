@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  /* West Team brand colors */
+  --color-navy: #09293d;
+  --color-gold: #fba333;
+  --color-orange: #f97828;
+  --color-red: #f35527;
+  --color-cream: #faf5ee;
+
+  /* Editorial neutrals derived from brand */
+  --color-ink: #09293d;
+  --color-graphite: #3c5464;
+  --color-ashen: #6d7f8b;
+  --color-pebble: #9aa8b0;
+  --color-mist: #d8ddd6;
+  --color-chalk: #efe9dd;
+  --color-parchment: #faf5ee;
+  --color-paper: #fffdf8;
+  --color-stone: #f1ece1;
+
+  /* Typography */
+  --font-serif: var(--font-source-serif);
+  --font-sans: var(--font-figtree);
   --font-mono: var(--font-geist-mono);
+
+  /* Type scale */
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-lead: 16px;
+  --leading-lead: 1.6;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.33;
+  --text-heading: 30px;
+  --leading-heading: 1.2;
+  --text-display: 44px;
+  --leading-display: 1.15;
+  /* Radius */
+  --radius-btn: 8px;
+  --radius-card: 16px;
+  --radius-elevated: 24px;
+
+  /* Shadow */
+  --shadow-lg: rgba(9, 41, 61, 0.06) 0px 4px 20px 0px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #09293d;
+    --foreground: #faf5ee;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #faf5ee;
+  color: #09293d;
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
